@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="60dp"
+        android:hint="Enter a value to convert BDT : "
+        android:textColorHint="#7ab7bf"
+        android:textSize="30dp"
+        android:inputType="number"
+        android:id="@+id/et1"
+        />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+
+        >
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="from USD"
+            android:textSize="40dp"
+            android:id="@+id/usd"
+            />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="from CAD"
+            android:textSize="40dp"
+            android:id="@+id/cad"
+            />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="from INR"
+            android:textSize="40dp"
+            android:id="@+id/inr"
+            />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="Convert"
+        android:textSize="30dp"
+        android:layout_marginTop="60dp"
+        android:id="@+id/btn1"
+        android:onClick="convertTo"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:hint="Result: "
+        android:background="@color/colorPrimary"
+        android:textSize="40dp"
+        android:id="@+id/tv1"
+        />
+
+
+</LinearLayout>
